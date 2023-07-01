@@ -97,7 +97,7 @@ function Message() {
           </div>
 
         
-            <img className="message_image" src="../../public/unsplash.jpg" alt="message_image" />
+            <img className="message_image" src="unsplash.jpg" alt="message_image" />
           
           
 
