@@ -385,7 +385,8 @@ nav img {
   font-size: 3rem;
   text-align: right;
   margin: 10vh 5vw 10vh auto;
-  width: 90%;
+  margin: 10vh auto;
+  width:80%;
 }
 
 .flavors_items_container {
@@ -827,8 +828,8 @@ right: 0;
 }
 
 .nutrition_image {
-  width: clamp(200px, 30vw, 250px);
-  height: clamp(200px, 30vw, 250px);
+  width: clamp(200px, 30vw, 300px);
+  height: clamp(200px, 30vw, 300px);
 }
 
 
@@ -950,7 +951,7 @@ right: 0;
   }
 
   .message_h3_container h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .ref-top {
@@ -1083,4 +1084,13 @@ right: 0;
   top: 0%;
 }
 
+.nutrition_image {
+  margin: 5vh auto;
+}
+
+/* Footer */
+.footer_container {
+  width: 70%;
+  margin: 0 auto;
+}
 }

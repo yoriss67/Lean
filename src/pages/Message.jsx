@@ -14,7 +14,7 @@ function Message() {
     visible: (custom = 0) => ({
       opacity: 1,
       rotateX: 0,
-      // rotateZ: 1,
+      rotateZ: -2,
       y: 0,
       scale: 1.1,
       transition: { type: 'spring', stiffness: 50, damping: 40, delay: custom },
