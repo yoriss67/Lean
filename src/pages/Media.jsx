@@ -3,6 +3,57 @@ import { motion } from 'framer-motion';
 import MediaData from './MediaData';
 
 export default function Media() {
+
+  // https://codepen.io/lokesh/pen/PMyajg?editors=1100
+  const styles = {
+    card: {
+      overflow: 'hidden',
+      position: 'absolute',
+      width: '100vw',
+      height: '100%',
+      borderRadius: 8,
+      boxShadow: '0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1), inset 0 0 0 2px rgba(0, 0, 0, 0.15)',
+      filter: 'blur(30px)',
+      transformOrigin: '160px 100px',
+      zIndex: -1,
+    },
+    cYellow: {
+      top: 110,
+      left: "50%",
+      width: 240,
+      height: 180,
+      background: '#EEC050',
+      borderRadius: '50%',
+    },
+    cPink: {
+      top: -60,
+      left: 70,
+      width: 180,
+      height: 220,
+      background: '#E792DA',
+      borderRadius: '50%',
+
+    },
+    cOrange: {
+      top: 70,
+      left: '60%',
+      width: '20%',
+      height: '20%',
+      background: '#F6A380',
+      borderRadius: '50%',
+
+    },
+    cBlue: {
+      top: 70,
+      left: -20,
+      width: 180,
+      height: 180,
+      background: '#79F',
+      borderRadius: '50%',
+
+    },
+  };
+  
   // const variants = {
   //   visible: {
   //     opacity: 1,
@@ -111,6 +162,15 @@ export default function Media() {
         </p>
         <span className="end-quote">”</span>
       </div>
+
+
+
+      <div style={styles.card}>
+      <div style={styles.cOrange}></div>
+      <div style={styles.cYellow}></div>
+      <div style={styles.cPink}></div>
+      <div style={styles.cBlue}></div>
+    </div>
     </div>
   );
 }

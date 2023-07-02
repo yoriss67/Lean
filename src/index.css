@@ -12,9 +12,13 @@ body {
   background-color: #a5c3d7;
  */
   background-color: #cbd8ff;
+  background-color: #F8F7EE;
   position: relative;
   font-family: 'Shippori Mincho', serif;
   overflow-x: hidden;
+  min-height: 100vh;
+  width: 100%;
+
 }
 .section {
   margin: 12rem auto;
@@ -28,9 +32,7 @@ p {
   display: none;
 }
 
-.bold {
-  font-weight: bold;
-}
+
 
 /* Navbar */
 nav {
@@ -372,7 +374,7 @@ nav img {
 
 /* Flavors */
 #flavors {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -400,10 +402,14 @@ nav img {
   flex-direction: column;
   justify-content: space-evenly; */
   transition: all .3s ease-in-out;
+  width: clamp(200px, 30vw, 300px) !important; /* This will set the width to 500px */
+  transform: translateX(-35%);
 }
 
 .slick-slide, .slick-slide * {
   margin: 0 .5vw !important;
+  margin: 0 auto !important;
+
 }
 
 
@@ -428,7 +434,8 @@ nav img {
   margin: 0 auto;
   transition: all .6s ease-in-out;
   z-index: 9;
-  transform: rotate3d(1, 1, 2, -45deg) translate(10%, -10%);
+  /* transform: rotate3d(1, 1, 2, -45deg) translate(10%, -10%); */
+  transform: rotate3d(1, 1, 2, -45deg);
 
 }
 
@@ -471,6 +478,7 @@ nav img {
 .carousel_div {
   /* これはカード内 */
   width: 100%;
+  height: 70vh;
   /* border: #000 2px solid;
   background-color: #7db8b0; */
   /* ここではない？？ */
@@ -478,13 +486,13 @@ nav img {
 }
 
 .slick-slider {
-  /* width: 100%;
-  overflow: visible; */
+  width: 100%;
+  /* overflow: visible; */
   height: 70vh;
 }
 
 .slick-list {
-  overflow: visible;
+  /* overflow-y: visible; */
 
 }
 
@@ -493,10 +501,16 @@ nav img {
   width: 80%;
   height: 100%;
   min-height: 1px;
-  margin: 0 5px;
+  margin: 0 auto;
 }
 
+.slick-prev {
+  left: 3vw;
+}
 
+.slick-next {
+  right: 3vw;
+}
 
 .slick-prev:before:hover, .slick-next:before:hover {
 }
@@ -527,9 +541,31 @@ nav img {
   font-size: 35px;
   line-height: 1;
   opacity: .75;
-  color: white;
+  color: #42A5F5;
+  color: #346C7F;
+  color: #438ba3;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -50px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+  color: #438ba3;
+
 }
 
 /* Media */
@@ -538,15 +574,21 @@ nav img {
 
 .media {
   width: 90%;
-  margin: 0 auto;
  min-height: 80vh;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 10vh;
   /* border: 2px solid #000; */
-  margin: 0 auto;
   text-align: center;
+  /* background: -moz-linear-gradient(top left, #d2d984, #da7daf); 
+  background: -webkit-linear-gradient(top left, #73FB12, #553A8F); 
+  background: linear-gradient(to bottom right, #eee8cc, #73aa8f); 
+  background: linear-gradient(to bottom right, #eee8cc, #60b357); 
+ */
+
+
+
 }
 
 #media {
@@ -581,6 +623,7 @@ nav img {
   border-radius: 10px;
   padding: 6% 2%;
   background-color: #D4D6C1;
+  background-color: #eae9e0;
   transition: transform .5s ease-in-out;
   
 }
@@ -713,8 +756,20 @@ right: 0;
 }
 
 .nutrition_item {
+  display: flex;
   position: absolute;
   font-size: 1.5rem;
+  min-width: 10vw;
+}
+
+.bold {
+  color: #F8F7EE;
+  background-color: #346C7F;
+  background-color: #76AAB9;
+  border-radius: 10px;
+  padding: 1% 2%;
+  white-space: nowrap;
+  margin: 0 5% 0 auto;
 }
 
 .nutrition_item:nth-child(1) {
@@ -736,6 +791,12 @@ right: 0;
 .nutrition_item.carb {
   left: 21%;
   top: 63%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carb {
+  display: flex;
 }
 /* .nutrition_item.carb::before {
   content: "-糖質：2.3g";
@@ -763,7 +824,7 @@ right: 0;
 } */
 
 .sugar, .fiber {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .nutrition_item:nth-child(5) {
@@ -779,6 +840,7 @@ right: 0;
 
 .nutrition_comment {
   width: 70%;
+  margin: 0 auto;
 }
 
 .nutrition_comment p {

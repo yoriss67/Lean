@@ -16,7 +16,7 @@ function Hero() {
         <div className="hero_image_container">
           {/* spline */}
           {/* <div className="hero_image_bg"> */}
-          <img src="ice-sample.png" alt="" />
+          <img src="supercup-removebg-preview.png" alt="" />
           {/* </div> */}
         </div>
         <p className="hero_p">Improve your health while chilling.</p>
