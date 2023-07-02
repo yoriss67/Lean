@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import MediaData from './MediaData';
 
 export default function Media() {
-
   // https://codepen.io/lokesh/pen/PMyajg?editors=1100
   const styles = {
     card: {
@@ -12,48 +11,62 @@ export default function Media() {
       width: '100vw',
       height: '100%',
       borderRadius: 8,
-      boxShadow: '0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1), inset 0 0 0 2px rgba(0, 0, 0, 0.15)',
-      filter: 'blur(30px)',
+      // boxShadow: '0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1), inset 0 0 0 2px rgba(0, 0, 0, 0.15)',
       transformOrigin: '160px 100px',
       zIndex: -1,
     },
     cYellow: {
-      top: 110,
-      left: "50%",
-      width: 240,
-      height: 180,
-      background: '#EEC050',
+      position: 'absolute',
+      zIndex: -1,
+
+      filter: 'blur(60px)',
+      top: '20%',
+      left: '10%',
+      width: '25vw',
+      height: '25vw',
+      background: '#92C2D1',
       borderRadius: '50%',
     },
     cPink: {
-      top: -60,
-      left: 70,
-      width: 180,
-      height: 220,
-      background: '#E792DA',
-      borderRadius: '50%',
+      position: 'absolute',
+      zIndex: -1,
+      filter: 'blur(50px)',
 
+      top: '6%',
+      right: '10%',
+      width: '20vw',
+      height: '20vw',
+      // background: '#F59285',
+      background: '#FEA1AC',
+      borderRadius: '50%',
     },
     cOrange: {
-      top: 70,
-      left: '60%',
-      width: '20%',
-      height: '20%',
-      background: '#F6A380',
-      borderRadius: '50%',
+      position: 'absolute',
+      zIndex: -1,
+      filter: 'blur(40px)',
 
+      top: '70%',
+      left: '35%',
+      width: '10vw',
+      height: '10vw',
+      // background: '#F6A380',
+      background: '#F6CE80',
+      borderRadius: '50%',
     },
     cBlue: {
-      top: 70,
-      left: -20,
-      width: 180,
-      height: 180,
-      background: '#79F',
-      borderRadius: '50%',
+      position: 'absolute',
+      zIndex: -1,
+      filter: 'blur(30px)',
 
+      top: '40%',
+      left: '55%',
+      width: '10vw',
+      height: '10vw',
+      background: ' #438ba3',
+      borderRadius: '50%',
     },
   };
-  
+
   // const variants = {
   //   visible: {
   //     opacity: 1,
@@ -163,14 +176,12 @@ export default function Media() {
         <span className="end-quote">”</span>
       </div>
 
-
-
-      <div style={styles.card}>
+      {/* <div style={styles.card}> */}
       <div style={styles.cOrange}></div>
       <div style={styles.cYellow}></div>
       <div style={styles.cPink}></div>
       <div style={styles.cBlue}></div>
-    </div>
+      {/* </div> */}
     </div>
   );
 }

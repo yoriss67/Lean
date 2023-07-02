@@ -7,7 +7,7 @@ function Hero() {
         <div className="hero_arrow_container">
           <div className="hero_arrow"></div>
         </div>
-        <img src="frame.svg" alt="" />
+        <img src="frame.svg" alt="logo" />
       </div>
 
       <div className="hero_container">
@@ -16,7 +16,7 @@ function Hero() {
         <div className="hero_image_container">
           {/* spline */}
           {/* <div className="hero_image_bg"> */}
-          <img src="supercup-removebg-preview.png" alt="" />
+          <img src="ice-sample.png" alt="" />
           {/* </div> */}
         </div>
         <p className="hero_p">Improve your health while chilling.</p>

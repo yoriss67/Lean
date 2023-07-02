@@ -17,9 +17,9 @@ function Home() {
         <Flavors2 />
         <Media />
         <Nutrition />
-        <Social />
+        {/* <Social /> */}
         <Footer />
-        <Dev />
+        {/* <Dev /> */}
       </div>
     )
   }

@@ -569,9 +569,6 @@ nav img {
 }
 
 /* Media */
-
-
-
 .media {
   width: 90%;
  min-height: 80vh;
@@ -579,16 +576,8 @@ nav img {
   display: flex;
   flex-direction: column;
   gap: 10vh;
-  /* border: 2px solid #000; */
   text-align: center;
-  /* background: -moz-linear-gradient(top left, #d2d984, #da7daf); 
-  background: -webkit-linear-gradient(top left, #73FB12, #553A8F); 
-  background: linear-gradient(to bottom right, #eee8cc, #73aa8f); 
-  background: linear-gradient(to bottom right, #eee8cc, #60b357); 
- */
-
-
-
+  position: relative;
 }
 
 #media {
@@ -753,6 +742,11 @@ right: 0;
   justify-content: center;
   align-items: center;
   position: relative;
+  flex-direction: column;
+}
+
+.square_container {
+  margin: 0 auto;
 }
 
 .nutrition_item {
@@ -762,7 +756,7 @@ right: 0;
   min-width: 10vw;
 }
 
-.bold {
+.square {
   color: #F8F7EE;
   background-color: #346C7F;
   background-color: #76AAB9;
@@ -857,16 +851,34 @@ right: 0;
 .nutrition_comment p:nth-child(3) {
 }
 
-
-
 .carousel_div_container {
-  /* display: flex;
-  flex-direction: row;
+
+}
+
+
+/* Footer */
+#footer {
+
+}
+
+.footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #76AAB9;
+  color: #fff;
+}
+
+.footer_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 0 auto; */
+  flex-direction: column;
+  margin: 0 auto;
 }
+
+
 
 
 
@@ -999,4 +1011,76 @@ right: 0;
     bottom: -60%;
     right: -3%;
   }
+
+
+  /* Nutrition */
+  .nutrition_items_container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* flex-direction: column; */
+  }
+  
+  .square_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1vh 5vw;
+    width: 90%;
+    padding-left: 10%;
+    margin: 0 auto;
+}
+
+  .nutrition_item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 1.5rem;
+    min-width: 10vw;
+  }
+
+  
+.nutrition_item:nth-child(1) {
+  left: 0%;
+  top: 0%;
+}
+
+.nutrition_item:nth-child(2) {
+  left: 0%;
+  top: 0%;
+}
+
+.nutrition_item:nth-child(3) {
+  left: 0%;
+  top: 0%;
+}
+
+
+.nutrition_item.carb {
+  left: 0%;
+  top: 0%;
+  display: flex;
+  flex-direction: flex;
+  flex-wrap: wrap;
+}
+
+.carb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.sugar, .fiber {
+  font-size: 1.3rem;
+}
+
+.nutrition_item:nth-child(5) {
+  left: 0%;
+  top: 0%;
+}
+
 }

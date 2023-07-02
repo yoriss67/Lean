@@ -1,6 +1,14 @@
-function Footer() {
+import React, { useState } from 'react';
+
+
+export default function Footer() {
+
+
   return (
-    <div>Footer</div>
-  )
+    <div className='footer' id='footer'>
+      <div className='footer_container'>
+        <p>Lean Copyright © 2023 Lean Co., Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  );
 }
-export default Footer

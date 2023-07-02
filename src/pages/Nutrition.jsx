@@ -64,25 +64,28 @@ export default function Nutrition() {
         </motion.h2>
 
         <div className="nutrition_items_container ">
-          <div className="nutrition_item">
-            <span className="bold">エネルギー</span>93kcal
-          </div>
-          <div className="nutrition_item">
-            <span className="bold">たんぱく質</span>10.3g
-          </div>
-          <div className="nutrition_item">
-            <span className="bold">脂質</span>1.2g
-          </div>
-          <div className="nutrition_item carb">
-            <div className="carb">
-              <span className="bold"> 炭水化物</span>10.5g
-            </div>
-            <div className="sugar">-糖質2.3g</div>
-            <div className="fiber">-食物繊維8.2g</div>
-          </div>
 
-          <div className="nutrition_item">
-            <span className="bold">食塩相当量</span>0.12g
+          <div className="square_container">
+            
+            <div className="nutrition_item">
+              <span className="square">エネルギー</span>93kcal
+            </div>
+            <div className="nutrition_item">
+              <span className="square">たんぱく質</span>10.3g
+            </div>
+            <div className="nutrition_item">
+              <span className="square">脂質</span>1.2g
+            </div>
+            <div className="nutrition_item carb">
+              <div className="carb">
+                <span className="square"> 炭水化物</span>10.5g
+              </div>
+              <div className="sugar">-糖質2.3g</div>
+              <div className="fiber">-食物繊維8.2g</div>
+            </div>
+            <div className="nutrition_item">
+              <span className="square">食塩相当量</span>0.12g
+            </div>
           </div>
 
           <motion.div

@@ -105,7 +105,8 @@ function Message() {
 
         <div className="message_right_container">
           <p className="">
-            <span ref={ref1} className={`running_line ${inView1 ? 'on' : null} `} >甘さを感じながらも健康を守りたい。</span>高タンパク低カロリー低脂肪のアイスクリームで、あなたの健康と美味しさの両立を叶えます。
+            {/* className={`running_line ${inView1 ? 'on' : null} `}  */}
+            <span ref={ref1} >甘さを感じながらも健康を守りたい。</span>高タンパク低カロリー低脂肪のアイスクリームで、あなたの健康と美味しさの両立を叶えます。
           </p>
           <p className="">
             <span className='running_line'>美しく痩せたい、いつまでも健康でいたい。</span>そんな方々が今、タンパク質の摂取に注目しています。高タンパク低カロリー食品は、ダイエットや筋力アップ、そして健康的なライフスタイルの維持に有効とされています。
