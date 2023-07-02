@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Spline from '@splinetool/react-spline';
+
+
 
 function Hero() {
   return (
@@ -16,7 +19,9 @@ function Hero() {
         <div className="hero_image_container">
           {/* spline */}
           {/* <div className="hero_image_bg"> */}
-          <img src="ice-sample.png" alt="" />
+          {/* <img src="ice-sample.png" alt="" /> */}
+          <Spline scene="https://prod.spline.design/MQ4Us0NIJLzxv7lp/scene.splinecode" />
+
           {/* </div> */}
         </div>
         <p className="hero_p">Improve your health while chilling.</p>
