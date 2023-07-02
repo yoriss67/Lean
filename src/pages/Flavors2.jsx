@@ -3,6 +3,8 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
 import FlavorsData from './FlavorsData';
+import Spline from '@splinetool/react-spline';
+
 
 // 🌸
 import Slider from 'react-slick';
@@ -112,7 +114,9 @@ export default function Flavors() {
                 
 
                   <div className="item_image_container">
-                    <img key={flavor.id} src={flavor.image} alt="" />
+                    {/* <img key={flavor.id} src={flavor.image} alt="" /> */}
+                    <Spline scene="https://prod.spline.design/MQ4Us0NIJLzxv7lp/scene.splinecode" />
+
                   </div>
                   
                   <div className="item_text_container">
