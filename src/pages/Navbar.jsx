@@ -20,6 +20,28 @@ export default function Navbar() {
   };
 
   const navClass = navOpen ? 'nav_open' : '';
+
+
+  // change color
+  const [changeColor, setChangeColor] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setChangeColor(true);
+    } else {
+      setChangeColor(false);
+    }
+  }
+
+  // 🌸これ忘れてた
+  React.useEffect(() => {
+    window.addEventListener("scroll", changeNavbarColor);
+    return () => {
+      window.removeEventListener("scroll", changeNavbarColor);
+    };
+  }, []);
+
+
+  
   return (
     <div className={`${navClass}`}>
     <header>
@@ -49,9 +71,9 @@ export default function Navbar() {
       <div className="sp_navbar pc_no">
         <div className="overlay" id="js_overlay" onClick={handleOverlayClick}>{navOpen}</div>
         <div className="hamburger" id="js_hamburger" onClick={handleHamburgerClick}>
-          <span className="first_line" />
-          <span className="second_line" />
-          <span className="third_line" />
+          <span className={`first_line ${changeColor ? 'blue' : ''}`} />
+          <span className={`second_line ${changeColor ? 'blue' : ''}`}/>
+          <span className={`third_line ${changeColor ? 'blue' : ''}`} />
         </div>
         <div className="sidemenu">
           <nav>

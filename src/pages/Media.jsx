@@ -117,7 +117,7 @@ export default function Media() {
   return (
     // <ParallaxProvider>
     <div className="media section" id="media">
-      <motion.div
+      <motion.h2
         ref={ref}
         variants={variants}
         initial="hidden"
@@ -125,11 +125,9 @@ export default function Media() {
         transition={{ duration: 0.5, ease: 'easeOut' }}
         style={{ transformStyle: 'preserve-3d' }}
       >
-        <h2>
           たくさんのメディア様に
           <br className="dn-for-pc" /> ご紹介頂きました
-        </h2>
-      </motion.div>
+      </motion.h2>
 
       <div className="media_container">
         {MediaData.map((medium) => (

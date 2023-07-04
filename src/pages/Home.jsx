@@ -71,7 +71,7 @@
 //   export default Home
 
 import React, { useState, useEffect } from 'react';
-import { Navbar, Hero, Hero2, Message, Flavors, Flavors2, Media, Nutrition, Social, Footer, Blog, Dev, Parallax, ParaChild } from '../index';
+import { Navbar, Hero, Hero2, Message, Flavors, Flavors2, Media, Nutrition, Social, Footer, Blog, Dev, Parallax, ParaChild, Vertical } from '../index';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -115,6 +115,8 @@ function Home() {
       <Footer />
       {/* <Parallax />
       <ParaChild /> */}
+      
+      {/* <Vertical /> */}
     </div>
   )
 }

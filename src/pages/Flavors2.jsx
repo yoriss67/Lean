@@ -124,10 +124,10 @@ export default function Flavors() {
                       <h3>{flavor.title}</h3>
                     </div>
                     <div className="item_description">
-                      <div className="item_intro">{flavor.desc}</div>
-                      <div className="item_kcal">
+                      <p className="item_intro">{flavor.desc}</p>
+                      <p className="item_kcal">
                         <span className="bold_kcal">{flavor.kcal}</span>kcal
-                      </div>
+                      </p>
                     </div>
                   </div>
                 </div>

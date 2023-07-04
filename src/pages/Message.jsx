@@ -55,9 +55,9 @@ function Message() {
     <div className="message section" id="message" >
       <div className="message_container">
         <div className="message_left_container">
-          <div className="message_h3_container">
+          <div className="message_h2_container">
             <div className={` ref-top ${inViewTop ? 'true' : 'false'} `} ref={refTop}>
-              <motion.h3
+              <motion.h2
                 ref={refTop}
                 variants={variants}
                 initial="hidden"
@@ -67,11 +67,11 @@ function Message() {
                 custom={0}
               >
                 高タンパク
-              </motion.h3>
+              </motion.h2>
             </div>
 
             <div className={`ref-middle ${inViewMiddle ? 'true' : 'false'} `} ref={refMiddle}>
-              <motion.h3
+              <motion.h2
                 ref={refMiddle}
                 variants={variants}
                 initial="hidden"
@@ -80,11 +80,11 @@ function Message() {
                 custom={0.2}
               >
                 低カロリー
-              </motion.h3>
+              </motion.h2>
             </div>
 
             <div className={`ref-bottom ${inViewMiddle ? 'true' : 'false'} `} ref={refBottom}>
-              <motion.h3
+              <motion.h2
                 variants={variants}
                 initial="hidden"
                 animate={inViewBottom ? 'visible' : 'hidden'}
@@ -92,7 +92,7 @@ function Message() {
                 custom={0.5}
               >
                 低脂肪
-              </motion.h3>
+              </motion.h2>
             </div>
           </div>
 

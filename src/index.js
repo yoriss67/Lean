@@ -31,3 +31,4 @@ export { default as Blog2 } from './pages/BlogPosts/Blog2';
 export { default as Dev } from './pages/Dev';
 export { default as Parallax } from './pages/Parallax';
 export { default as ParaChild } from './pages/ParaChild';
+export { default as Vertical } from './pages/Vertical';

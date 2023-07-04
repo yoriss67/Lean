@@ -173,18 +173,23 @@ nav {
   z-index: 101;
 }
 .hamburger span {
-  background-color: #435bb4;
   height: 1.5px;
-  left: 15px;
+  right: 15px;
   position: absolute;
+  position: fixed;
   transition: all 0.6s;
+
 }
+
+
 .first_line {
   transition: all 0.5s;
   top: 20px;
   width: 30px;
   height: 100%;
   position: relative;
+  background-color: #fff;
+
 }
 
 .first_line::after {
@@ -196,12 +201,17 @@ nav {
   height: 10px;
   /* background-color: rgba(255, 192, 203, 0.715); */
 }
+
+
+
 .second_line {
   transition: all 0.5s;
   top: 29px;
   width: 25px;
   transform: translateX(4px);
   position: relative;
+  background-color: #fff;
+
 }
 
 .second_line::after {
@@ -220,6 +230,8 @@ nav {
   width: 19px;
   transform: translateX(10px);
   position: relative;
+  background-color: #fff;
+
 }
 
 .third_line::after {
@@ -245,6 +257,11 @@ nav {
 .third_line:hover {
   width: 35px;
   transform: translateX(-5px);
+}
+
+.blue {
+  background-color: #435bb4;
+  transition: background-color 1s;
 }
 
 /*------------------------------------
@@ -313,6 +330,28 @@ header li a {
 
   .logo {
 }
+
+
+/* Hamburger */
+.second_line, .third_line {
+  transform: translateX(0px);
+}
+
+.first_line:hover {
+  width: 40px;
+  transform: translateX(-5px);
+}
+
+.second_line:hover {
+  width: 20px;
+  transform: translateX(7px);
+}
+
+.third_line:hover {
+  width: 35px;
+  transform: translateX(-2px);
+}
+
 
 }
 @media screen and (min-width: 999px) {

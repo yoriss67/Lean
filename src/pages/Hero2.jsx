@@ -56,7 +56,7 @@ function Hero() {
           }}
         >
           <div style={{ height: '100%' }}>
-            <Parallax offset={100}>{stars}</Parallax>
+            <Parallax offset={200}>{stars}</Parallax>
           </div>
         </div>
       </div>
