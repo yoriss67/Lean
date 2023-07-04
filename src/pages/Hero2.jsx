@@ -1,11 +1,66 @@
-import React, { useState } from 'react';
-import Spline from '@splinetool/react-spline';
+import React, { useState, useEffect } from 'react';
+// import Spline from '@splinetool/react-spline';
+import Parallax from './Parallax';
 
+const Star = ({ size, left, top, backgroundColor }) => (
+  <div
+    style={{
+      position: 'absolute',
+      width: `${size}px`,
+      height: `${size}px`,
+      borderRadius: '50%',
+      // backgroundColor: 'white',
+      backgroundColor,
+      left: `${left}%`,
+      top: `${top}%`,
+    }}
+  />
+);
 
+function getRandomColor() {
+  const baseValue = 200;
+  var red = baseValue + Math.floor(Math.random() * 30);
+  var green = baseValue + Math.floor(Math.random() * 30);
+  var blue = baseValue + Math.floor(Math.random() * 30);
+
+  // Create a CSS color string using the RGB values
+  var color = "rgb(" + red + ", " + green + ", " + blue + ")";
+
+  return color;
+}
 
 function Hero() {
+
+
+  const stars = Array.from({ length: 100 }).map((_, i) => (
+    <Star
+      key={i}
+      backgroundColor={getRandomColor()}
+      size={Math.random() * 4} // Random size between 0 and 2
+      left={Math.random() * 100} // Random position from 0 to 100%
+      top={Math.random() * 100} // Random position from 0 to 100%
+    />
+  ));
+  
+
+
   return (
     <div className="hero" id="hero">
+
+      <div className="parallax_container">
+        <div
+          style={{
+            position: 'relative',
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          <div style={{ height: '100%' }}>
+            <Parallax offset={100}>{stars}</Parallax>
+          </div>
+        </div>
+      </div>
+
       <div className="hero_scroll">
         <div className="hero_arrow_container">
           <div className="hero_arrow"></div>
@@ -19,8 +74,8 @@ function Hero() {
         <div className="hero_image_container">
           {/* spline */}
           {/* <div className="hero_image_bg"> */}
-          {/* <img src="ice-sample.png" alt="" /> */}
-          <Spline scene="https://prod.spline.design/MQ4Us0NIJLzxv7lp/scene.splinecode" />
+          <img src="Vanilla.png" alt="" />
+          {/* <Spline scene="https://prod.spline.design/MQ4Us0NIJLzxv7lp/scene.splinecode" /> */}
 
           {/* </div> */}
         </div>

@@ -65,26 +65,26 @@ export default function Nutrition() {
 
         <div className="nutrition_items_container ">
 
-          <div className="square_container">
+          <div className="title_container">
             
             <div className="nutrition_item">
-              <span className="square">エネルギー</span>93kcal
+              <span className="title">エネルギー</span><span className="value">93kcal</span>
             </div>
             <div className="nutrition_item">
-              <span className="square">たんぱく質</span>10.3g
+              <span className="title">たんぱく質</span><span className="value">10.3g</span>
             </div>
             <div className="nutrition_item">
-              <span className="square">脂質</span>1.2g
+              <span className="title">脂質</span><span className="value">1.2g</span>
             </div>
             <div className="nutrition_item carb">
               <div className="carb">
-                <span className="square"> 炭水化物</span>10.5g
+                <span className="title"> 炭水化物</span><span className="value">10.5g</span>
               </div>
-              <div className="sugar">-糖質2.3g</div>
-              <div className="fiber">-食物繊維8.2g</div>
+              <div className="sugar">-糖質<span className="value">2.3g</span></div>
+              <div className="fiber">-食物繊維<span className="value">8.2g</span></div>
             </div>
             <div className="nutrition_item">
-              <span className="square">食塩相当量</span>0.12g
+              <span className="title">食塩相当量</span><span className="value">0.12g</span>
             </div>
           </div>
 

@@ -2,19 +2,22 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import MediaData from './MediaData';
 
+// import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import Parallax from './Parallax';
+
 export default function Media() {
   // https://codepen.io/lokesh/pen/PMyajg?editors=1100
   const styles = {
-    card: {
-      overflow: 'hidden',
-      position: 'absolute',
-      width: '100vw',
-      height: '100%',
-      borderRadius: 8,
-      // boxShadow: '0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1), inset 0 0 0 2px rgba(0, 0, 0, 0.15)',
-      transformOrigin: '160px 100px',
-      zIndex: -1,
-    },
+    // card: {
+    //   overflow: 'hidden',
+    //   position: 'absolute',
+    //   width: '100vw',
+    //   height: '100%',
+    //   borderRadius: 8,
+    //   // boxShadow: '0 8px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1), inset 0 0 0 2px rgba(0, 0, 0, 0.15)',
+    //   transformOrigin: '160px 100px',
+    //   zIndex: -1,
+    // },
     cYellow: {
       position: 'absolute',
       zIndex: -1,
@@ -26,18 +29,20 @@ export default function Media() {
       height: '25vw',
       background: '#92C2D1',
       borderRadius: '50%',
+      transformOrigin: '160px 100px',
     },
     cPink: {
       position: 'absolute',
       zIndex: -1,
       filter: 'blur(50px)',
+      opacity: 0.5,
 
       top: '6%',
       right: '10%',
       width: '20vw',
       height: '20vw',
       // background: '#F59285',
-      background: '#FEA1AC',
+      background: '#EC6801',
       borderRadius: '50%',
     },
     cOrange: {
@@ -110,6 +115,7 @@ export default function Media() {
   });
 
   return (
+    // <ParallaxProvider>
     <div className="media section" id="media">
       <motion.div
         ref={ref}
@@ -127,6 +133,7 @@ export default function Media() {
 
       <div className="media_container">
         {MediaData.map((medium) => (
+          
           <div key={medium.id} className="media_item">
             <a href="#">
               <img src="external-link.svg" className="link_logo" />
@@ -176,12 +183,44 @@ export default function Media() {
         <span className="end-quote">”</span>
       </div>
 
-      {/* <div style={styles.card}> */}
+      {/* <Parallax y={[-20, 20]} tagOuter="figure">
+          <div style={styles.cOrange}></div>
+        </Parallax>
+
+        <Parallax y={[-20, 20]} tagOuter="figure">
+          <div style={styles.cYellow}></div>
+        </Parallax>
+        <Parallax y={[-20, 20]} tagOuter="figure">
+          <div style={styles.cPink}></div>
+        </Parallax>
+        <Parallax y={[-20, 20]} tagOuter="figure">
+          <div style={styles.cBlue}></div>
+        </Parallax> */}
+      {/* <div className="card" style={styles.card}> */}
+
+
+      {/* <Parallax offset={10}>
+        <div className="abstract_bg" style={styles.cOrange}></div>
+      </Parallax>
+      <Parallax offset={10}>
+        <div className="abstract_bg" style={styles.cYellow}></div>
+      </Parallax>
+      <Parallax offset={10}>
+        <div className="abstract_bg" style={styles.cPink}></div>
+      </Parallax>
+      <Parallax offset={10}>
+        <div className="abstract_bg" style={styles.cBlue}></div>
+      </Parallax> */}
+
       <div style={styles.cOrange}></div>
+
       <div style={styles.cYellow}></div>
+
       <div style={styles.cPink}></div>
+
       <div style={styles.cBlue}></div>
-      {/* </div> */}
     </div>
+    // </div>
+    // </ParallaxProvider>
   );
 }

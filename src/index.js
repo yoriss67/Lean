@@ -29,3 +29,5 @@ export { default as Blog2 } from './pages/BlogPosts/Blog2';
 
 // export { default as Page } from './pages/❌Page';
 export { default as Dev } from './pages/Dev';
+export { default as Parallax } from './pages/Parallax';
+export { default as ParaChild } from './pages/ParaChild';
