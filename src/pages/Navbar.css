@@ -244,20 +244,6 @@ nav {
   /* background-color: rgba(255, 192, 203, 0.715); */
 }
 
-/* .first_line:hover {
-  width: 40px;
-  transform: translateX(-10px);
-}
-
-.second_line:hover {
-  width: 20px;
-  transform: translateX(15px);
-}
-
-.third_line:hover {
-  width: 35px;
-  transform: translateX(-5px);
-} */
 
 .blue {
   background-color: #435bb4;
@@ -326,6 +312,7 @@ header li a {
   }
   .hamburger {
     top: 0;
+    position: fixed;
   }
 
   .logo {
@@ -363,6 +350,26 @@ header li a {
   width: 35px;
   transform: translateX(-2px);
 }
+
+
+
+.first_line::after {
+  transform: translate(-10px, -5px);
+}
+
+
+
+.second_line::after {
+  transform: translate(-10px, -5px);
+}
+
+
+
+.third_line::after {
+  transform: translate(-10px, -5px);
+}
+
+
 
 
 }
