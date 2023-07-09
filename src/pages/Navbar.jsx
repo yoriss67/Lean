@@ -67,6 +67,7 @@ export default function Navbar() {
         </div>
       </div>
       {/* pcハンバーガーメニュー ↑ */}
+
       {/* spハンバーガーメニュー ↓ */}
       <div className="sp_navbar pc_no">
         <div className="overlay" id="js_overlay" onClick={handleOverlayClick}>{navOpen}</div>
@@ -82,13 +83,13 @@ export default function Navbar() {
               <li><a className="nav-item"  href="#flavors">フレーバー</a></li>
               <li><a className="nav-item"  href="#media">メディア</a></li>
               <li><a className="nav-item"  href="#nutrition">栄養成分</a></li>
-              {/* <li><Link className="nav-item"  to="/blog">Blog</Link></li> */}
               <li><a><FontAwesomeIcon icon={faTwitter} /></a></li>
           <li><a><FontAwesomeIcon icon={faInstagram} /></a></li>
             </ul>
           </nav>
         </div>
       </div>
+      
     </header>
     </div>
   );

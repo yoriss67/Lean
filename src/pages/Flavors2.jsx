@@ -3,7 +3,6 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
 import FlavorsData from './FlavorsData';
-import Spline from '@splinetool/react-spline';
 
 
 // 🌸
@@ -88,7 +87,7 @@ export default function Flavors() {
         </motion.h2>
 
         {/* <div className="flavors_items_container"> */}
-          <Slider {...settings}>
+          <Slider {...settings} className='slider_container'>
             {/* <div>
               <div className="carousel_div">Card 1</div>
             </div>
@@ -110,8 +109,7 @@ export default function Flavors() {
             {FlavorsData.map((flavor) => (
               
               <div key={flavor.id} className="flavors_item" style={{ width: 100 }}>
-                <div className="carousel_div"  >
-                
+                {/* <div className="carousel_div"  > */}
 
                   <div className="item_image_container">
                     <img key={flavor.id} src={flavor.image} alt="" />
@@ -129,7 +127,7 @@ export default function Flavors() {
                         <span className="bold_kcal">{flavor.kcal}</span>kcal
                       </p>
                     </div>
-                  </div>
+                  {/* </div> */}
                 </div>
 
                </div>
