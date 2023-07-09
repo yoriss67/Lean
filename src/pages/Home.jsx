@@ -88,6 +88,9 @@ function Home() {
 
     if (window.scrollY > offsetTop + offsetHeight) {
       setBgColor("#F8F7EE");
+      
+      setBgColor("#fdccac82");
+
     } else {
       // setBgColor("#ec6701ba");
       setBgColor("#438ba3");

@@ -46,7 +46,7 @@ function Hero() {
 
   return (
     <div className="hero" id="hero">
-
+      <div className="bgi"></div>
       <div className="parallax_container">
         <div
           style={{
