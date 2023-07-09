@@ -79,7 +79,7 @@ function Hero() {
 
           {/* </div> */}
         </div>
-        <p className="hero_p">Improve your health while chilling.</p>
+        <p className="hero_p">Improve your health <br className="dn-for-pc" /> while chilling.</p>
       </div>
     </div>
   );

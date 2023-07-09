@@ -893,8 +893,11 @@ p {
   font-size: 1rem;
 }
 
+
+/* hero */
   #hero {
     margin: 5vh auto;
+    width: 80%;
   }
   .hero_container {
   }
@@ -950,7 +953,7 @@ p {
   }
 
   .message_h2_container h2 {
-    /* font-size: 1rem; */
+    font-size: 1rem;
   }
 
   .ref-top {
@@ -1103,6 +1106,10 @@ p {
 .footer_container {
   width: 70%;
   margin: 0 auto;
+}
+
+.footer_container p {
+  font-size: .8rem;
 }
 }
 
