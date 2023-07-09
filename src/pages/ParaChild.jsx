@@ -29,6 +29,7 @@ const Star = ({ size, left, top }) => (
       backgroundColor: 'white',
       left: `${left}%`,
       top: `${top}%`,
+      zIndex: -1,
     }}
   />
 );

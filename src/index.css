@@ -270,6 +270,8 @@ border-radius: 20px;
 .hero_image_container img {
   width: 100%;
   margin: 0 auto;
+  z-index: 99;
+  position: relative;
 }
 /* .hero_image_bg {
   width: 50%;
