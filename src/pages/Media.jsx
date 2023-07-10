@@ -175,9 +175,7 @@ export default function Media() {
       <div className="media_comment">
         <span className="initial-quote">“</span>
         <p>
-          The first time I decided to bake brownies I totally failed. The second time same. The cake
-          always came out too gooey, too dry, too wet...
-        </p>
+        First bite of this healthy ice cream, and I was hooked. Sweet, yet virtuous; it's my go-to guilt-free indulgence. Tasty and fit? Now, that's a cheat day well-spent!        </p>
         <span className="end-quote">”</span>
       </div>
 

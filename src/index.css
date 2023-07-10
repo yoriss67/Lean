@@ -410,15 +410,15 @@ border-radius: 20px;
   width: clamp(200px, 25vw, 270px) !important; /* This will set the width to 500px */
   transform: translateX(-35%);
   /* box-shadow: inset 7px 5px 20px rgba(140, 141, 129, 0.5); */
-  height: 70vh;
+  height: 60vh;
 }
 
 
 
 
 .slick-slide, .slick-slide * {
-  margin: 0 .5vw !important;
-  margin: 0 auto !important;
+  /* margin: 0 .5vw !important;
+  margin: 0 auto !important; */
 
 }
 
@@ -455,7 +455,7 @@ border-radius: 20px;
 
 .item_text_container {
   height: 35%;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   /* padding: 2% 0; */
   display: flex;
@@ -476,10 +476,12 @@ border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3vw;
+  gap: 1vw;
+  width: 100%;
 }
 
 .item_intro {
+  width: 70%;
 }
 
 .bold_kcal {
@@ -530,7 +532,7 @@ border-radius: 20px;
   font-size: 10px;
   line-height: 0;
   position: absolute;
-  top: 50%;
+  top: 30%;
   display: block;
   width: 20px;
   height: 20px;
@@ -562,7 +564,7 @@ border-radius: 20px;
 
 .slick-dots {
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   /* bottom: -50px; */
   display: block;
   width: 100%;

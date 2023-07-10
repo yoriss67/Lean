@@ -118,9 +118,7 @@ export default function Flavors() {
                   </div>
                   
                   <div className="item_text_container">
-                    <div className="item_name">
-                      <h3>{flavor.title}</h3>
-                    </div>
+                      <h3 className="item_name">{flavor.title}</h3>
                     <div className="item_description">
                       <p className="item_intro">{flavor.desc}</p>
                       <p className="item_kcal">
