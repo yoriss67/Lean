@@ -35,7 +35,6 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   width: 100%;
-
 }
 /* 
 body.colorChangeDown {
@@ -53,8 +52,10 @@ body.colorChangeUp {
 } */
 
 
+
 .section {
   margin: 12rem auto;
+  ;
 }
 
 p {
@@ -74,6 +75,10 @@ h3 {
   font-size: 2rem;
 }
 
+.App {
+  font-family: 'Shippori Mincho', serif;
+
+}
 
 /* Navbar */
 nav {
@@ -111,7 +116,7 @@ nav img {
 /* Hero */
 
 #hero {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   height: 80vh;
   color: #fff;
@@ -666,6 +671,7 @@ border-radius: 20px;
 
 .item_image {
   width: 90%;
+  object-fit: contain;
 }
 
 .biyo {
@@ -869,6 +875,8 @@ right: 0;
   flex-direction: column;
   margin: 0 auto;
 }
+
+
 
 
 

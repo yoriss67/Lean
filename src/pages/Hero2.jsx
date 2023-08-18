@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import Spline from '@splinetool/react-spline';
-import Parallax from './Parallax';
+import Parallax from '../not-in-use/Parallax';
 
 const Star = ({ size, left, top, backgroundColor }) => (
   <div
@@ -24,14 +24,12 @@ function getRandomColor() {
   var blue = baseValue + Math.floor(Math.random() * 30);
 
   // Create a CSS color string using the RGB values
-  var color = "rgb(" + red + ", " + green + ", " + blue + ")";
+  var color = 'rgb(' + red + ', ' + green + ', ' + blue + ')';
 
   return color;
 }
 
 function Hero() {
-
-
   const stars = Array.from({ length: 100 }).map((_, i) => (
     <Star
       key={i}
@@ -41,8 +39,6 @@ function Hero() {
       top={Math.random() * 100} // Random position from 0 to 100%
     />
   ));
-  
-
 
   return (
     <div className="hero" id="hero">
@@ -79,7 +75,9 @@ function Hero() {
 
           {/* </div> */}
         </div>
-        <p className="hero_p">Improve your health <br className="dn-for-pc" /> while chilling.</p>
+        <p className="hero_p">
+          Improve your health <br className="dn-for-pc" /> while chilling.
+        </p>
       </div>
     </div>
   );

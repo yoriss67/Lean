@@ -1,38 +1,37 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import { Home, Navbar, Blog, Blog1 } from './index';
+import { Routes, Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Home, Navbar, Blog, Blog1, Store, Footer } from './index';
 import './index.css';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+
+import { ShoppingCartProvider } from './context/ShoppingCartContext';
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className="main">
-        <Routes>
-          {/* 🙋‍♀️Routeの中でもHomeは"/"なので表示される */}
-          <Route path="/" element={<Home />} />
-          <Route path="/blog/*" element={<Blog />} />
-          {/* <Route path="/about/:id" element={<Blog />} /> */}
-          {/* <Route path="/about/:id" element={<Blog1 />} /> */}
-        </Routes>
+    <ShoppingCartProvider>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="main">
+          <Routes>
+            {/* 🙋‍♀️Routeの中でもHomeは"/"なので表示される */}
+            <Route path="/" element={<Home />} />
+            <Route path="/blog/*" element={<Blog />} />
+            {/* <Route path="/about/:id" element={<Blog />} /> */}
+            {/* <Route path="/about/:id" element={<Blog1 />} /> */}
 
-        {/* <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About🙋‍♀️</Link>
-            </li>
-          </ul>
-        </nav> */}
+            <Route path="/store/*" element={<Store />} />
+          </Routes>
+        </div>
+        <Footer />
 
-        {/* ❌<Page /> */}
       </div>
-    </div>
+
+    </Router>
+    </ShoppingCartProvider>
   );
 }
 

@@ -71,7 +71,7 @@
 //   export default Home
 
 import React, { useState, useEffect } from 'react';
-import { Navbar, Hero, Hero2, Message, Flavors, Flavors2, Media, Nutrition, Social, Footer, Blog, Dev, Parallax, ParaChild, Vertical } from '../index';
+import {  Hero, Hero2, Message, Flavors, Flavors2, Media, Nutrition, Social, Footer, Blog, Dev, Parallax, ParaChild, Vertical } from '../index';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -79,7 +79,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "../index.css"
 
 function Home() {
-  const [bgColor, setBgColor] = useState('#3d6481');
+  // const [bgColor, setBgColor] = useState('#3d6481');
+  const [bgColor, setBgColor] = useState('#6892b1');
+
 
   const handleScroll = () => {
     const hero2 = document.getElementById('hero');
@@ -115,7 +117,6 @@ function Home() {
       <Flavors2 />
       <Media />
       <Nutrition />
-      <Footer />
       {/* <Parallax />
       <ParaChild /> */}
       

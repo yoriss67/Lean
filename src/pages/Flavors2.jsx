@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
-import FlavorsData from './FlavorsData';
+import flavorsData from '../data/flavorsData';
 
 
 // 🌸
@@ -106,7 +106,7 @@ export default function Flavors() {
             <div className="">
               <div className="carousel_div">Card 6</div>
             </div> */}
-            {FlavorsData.map((flavor) => (
+            {flavorsData.map((flavor) => (
               
               <div key={flavor.id} className="flavors_item" style={{ width: 100 }}>
                 {/* <div className="carousel_div"  > */}

@@ -1,9 +1,9 @@
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import MediaData from './MediaData';
+import mediaData from '../data/mediaData.json';
 
 // import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
-import Parallax from './Parallax';
+import Parallax from '../not-in-use/Parallax';
 
 export default function Media() {
   // https://codepen.io/lokesh/pen/PMyajg?editors=1100
@@ -125,13 +125,12 @@ export default function Media() {
         transition={{ duration: 0.5, ease: 'easeOut' }}
         style={{ transformStyle: 'preserve-3d' }}
       >
-          たくさんのメディア様に
-          <br className="dn-for-pc" /> ご紹介頂きました
+        たくさんのメディア様に
+        <br className="dn-for-pc" /> ご紹介頂きました
       </motion.h2>
 
       <div className="media_container">
-        {MediaData.map((medium) => (
-          
+        {mediaData.map((medium) => (
           <div key={medium.id} className="media_item">
             <a href="#">
               <img src="external-link.svg" className="link_logo" />
@@ -175,7 +174,9 @@ export default function Media() {
       <div className="media_comment">
         <span className="initial-quote">“</span>
         <p>
-        First bite of this healthy ice cream, and I was hooked. Sweet, yet virtuous; it's my go-to guilt-free indulgence. Tasty and fit? Now, that's a cheat day well-spent!        </p>
+          First bite of this healthy ice cream, and I was hooked. Sweet, yet virtuous; it's my go-to guilt-free
+          indulgence. Tasty and fit? Now, that's a cheat day well-spent!{' '}
+        </p>
         <span className="end-quote">”</span>
       </div>
 
@@ -193,7 +194,6 @@ export default function Media() {
           <div style={styles.cBlue}></div>
         </Parallax> */}
       {/* <div className="card" style={styles.card}> */}
-
 
       {/* <Parallax offset={10}>
         <div className="abstract_bg" style={styles.cOrange}></div>
