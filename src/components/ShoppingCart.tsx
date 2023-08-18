@@ -4,7 +4,6 @@ import CartItem from './CartItem';
 import formatCurrency from '../utilities/formatCurrency';
 import storeItems from "../data/items.json"
 
-import './ShoppingCart.css'
 
 // 🤔何これ
 type ShoppingCartProps = {
