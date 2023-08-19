@@ -11,7 +11,7 @@ type CartItemProps = {
 };
 
 function CartItem({ id, quantity }: CartItemProps) {
-  const { removeFromCart } = useShoppingCart();
+  const { decreaseCartQuantity } = useShoppingCart();
   const item = storeItems.find((i) => i.id === id);
   // 😧1行で書けるんだ
   if (item == null) return null;
@@ -31,7 +31,7 @@ function CartItem({ id, quantity }: CartItemProps) {
         <div className="text-muted">{formatCurrency(item.price)}</div>
       </div>
         <div className="text-muted">{ formatCurrency( item.price  * quantity )}</div> 
-        <Button variant="outline-danger"  size="sm" onClick={() => removeFromCart(item.id)}>&times;</Button>
+        <Button variant="outline-danger"  size="sm" onClick={() => decreaseCartQuantity(item.id)}>&minus;</Button>
     
     </Stack>
   );

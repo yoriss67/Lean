@@ -29,15 +29,15 @@ const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
         <div className="mt-auto">
           {quantity === 0 ? (
             // 🙋‍♀️同じincreaseCartQuantity
-            <Button variant='' style={{ backgroundColor: "#8ca8b0", color: "white"}} className="w-100 hover-shadow"  onClick={() => increaseCartQuantity(id)}>+ Add to Cart</Button>
+            <Button variant='' style={{ backgroundColor: "#438BA3", color: "white"}} className="w-100 hover-shadow"  onClick={() => increaseCartQuantity(id)}>+ Add to Cart</Button>
           ) : (
             <div className="d-flex align-items-center flex-column" style={{ gap: '.5rem' }}>
               <div className="d-flex align-items-center justify-content-center" style={{ gap: '.5rem' }}>
               {/* 🤔なんで{increaseCartQuantity}じゃないの？ */}
-                <Button variant='' style={{ backgroundColor: "#8ca8b0", color: "white"}} className='hover-shadow'  onClick={() => decreaseCartQuantity(id)}>-</Button>
+                <Button variant='' style={{ backgroundColor: "#438BA3", color: "white"}} className='hover-shadow'  onClick={() => decreaseCartQuantity(id)}>-</Button>
                 <div className="fs-3">{quantity} in cart</div>
                  {/* 🙋‍♀️同じincreaseCartQuantity */}
-                <Button variant='' style={{ backgroundColor: "#8ca8b0", color: "white"}} className='hover-shadow' onClick={() => increaseCartQuantity(id)}>+</Button>
+                <Button variant='' style={{ backgroundColor: "#438BA3", color: "white"}} className='hover-shadow' onClick={() => increaseCartQuantity(id)}>+</Button>
               </div>
               
               <Button variant='' style={{ backgroundColor: "rgb(251, 107, 39)", color: "white"}} className='remove-button' size="sm"  onClick={() => removeFromCart(id)}>
