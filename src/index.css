@@ -5,28 +5,24 @@ font-family: 'Pacifico', cursive;
 font-family: 'Shippori Mincho', serif;
 */
 
-
-
-
-
 body {
   /* background-color: #b9c5cd;
   background-color: #a5c3d7;
  */
- 
+
   background-color: #cbd8ff;
-  background-color: #F8F7EE;
+  background-color: #f8f7ee;
   background-color: #e48d8d;
   background-color: #c67d49;
   background-color: #3d6481;
   background-color: #fabc5f;
   background-color: #dcaa60;
-  background-color: #EC6801;
-  background-color: #E7814B;
+  background-color: #ec6801;
+  background-color: #e7814b;
   background-color: #feb3c05e;
   background-color: #fec0b89b;
   background-color: #fec0b862;
-  background-color: #FDF19F;
+  background-color: #fdf19f;
   background-color: #fdccacc5;
   background-color: #fdccac82;
 
@@ -51,11 +47,8 @@ body.colorChangeUp {
   100% { background-color: #F8F7EE; }
 } */
 
-
-
 .section {
   margin: 12rem auto;
-  ;
 }
 
 p {
@@ -65,7 +58,6 @@ p {
 .dn-for-pc {
   display: none;
 }
-
 
 h2 {
   font-size: 2.5rem;
@@ -77,7 +69,6 @@ h3 {
 
 .App {
   font-family: 'Shippori Mincho', serif;
-
 }
 
 /* Navbar */
@@ -122,19 +113,18 @@ nav img {
   color: #fff;
   position: relative;
   box-sizing: border-box;
-
 }
 
 .bgi {
-position: absolute;
-width: 100%;
-height: 100%;
-background-image: url(../public/bg.jpg);
-background-size: cover;
-background-position: center 45%;
-opacity: .5;
-z-index: -1;
-border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/bg.jpg);
+  background-size: cover;
+  background-position: center 45%;
+  opacity: 0.5;
+  z-index: -1;
+  border-radius: 20px;
 }
 
 .hero_scroll {
@@ -186,7 +176,7 @@ border-radius: 20px;
   width: 2rem;
   transform: rotate(-10deg) translateX(100px);
   padding-top: 50px;
-  animation: popup 5s  cubic-bezier(.16,.5,.43,1)  forwards infinite;
+  animation: popup 5s cubic-bezier(0.16, 0.5, 0.43, 1) forwards infinite;
 }
 
 @keyframes popup {
@@ -195,30 +185,29 @@ border-radius: 20px;
     opacity: 0;
   }
   50% {
-    transform:rotate(-5deg) translateY(5px);
+    transform: rotate(-5deg) translateY(5px);
     opacity: 0;
   }
 
   80% {
-    transform:rotate(-6deg) translateX(-2px) translateY(10px);
+    transform: rotate(-6deg) translateX(-2px) translateY(10px);
     opacity: 1;
   }
-  85%{
-    transform:rotate(-7deg) translateX(-3px) translateY(15px);
-    opacity: .3;
+  85% {
+    transform: rotate(-7deg) translateX(-3px) translateY(15px);
+    opacity: 0.3;
   }
   90% {
     transform: rotate(-8deg) translateX(-4px) translateY(20px);
-    opacity: .1;
+    opacity: 0.1;
   }
   100% {
     /* transform: translateX( -3px) translateY(5px); */
-    transform:rotate(-10deg) translateX(-4px) translateY(25px);
+    transform: rotate(-10deg) translateX(-4px) translateY(25px);
     opacity: 0;
     /* scale: .5; */
   }
 }
-
 
 .parallax_container {
   position: absolute;
@@ -234,7 +223,6 @@ border-radius: 20px;
 .paramotion {
   height: 100%;
 }
-
 
 /* -- */
 
@@ -284,8 +272,6 @@ border-radius: 20px;
  .hero_image {
   width: 50%;
 } */
-
-
 
 /* Message */
 .message {
@@ -374,13 +360,10 @@ border-radius: 20px;
   display: inline-block;
 }
 
-
 .running_line.on::after {
   transform-origin: left top;
-  transform: scale(1, .6);
+  transform: scale(1, 0.6);
 }
-
-
 
 /* Flavors */
 #flavors {
@@ -395,7 +378,7 @@ border-radius: 20px;
   text-align: right;
   margin: 10vh 5vw 10vh auto;
   margin: 10vh auto;
-  width:80%;
+  width: 80%;
 }
 
 /* .flavors_items_container {
@@ -411,22 +394,18 @@ border-radius: 20px;
   /* display: flex;
   flex-direction: column;
   justify-content: space-evenly; */
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   width: clamp(200px, 25vw, 270px) !important; /* This will set the width to 500px */
   transform: translateX(-35%);
   /* box-shadow: inset 7px 5px 20px rgba(140, 141, 129, 0.5); */
   height: 60vh;
 }
 
-
-
-
-.slick-slide, .slick-slide * {
+.slick-slide,
+.slick-slide * {
   /* margin: 0 .5vw !important;
   margin: 0 auto !important; */
-
 }
-
 
 .flavors_item:hover {
   /* transform: scale(1.02); */
@@ -447,11 +426,10 @@ border-radius: 20px;
 .item_image_container img {
   width: 100%;
   margin: 0 auto;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   z-index: 9;
   /* transform: rotate3d(1, 1, 2, -45deg) translate(10%, -10%); */
   transform: rotate3d(1, 1, 2, -45deg);
-
 }
 
 .item_image_container img:hover {
@@ -496,7 +474,6 @@ border-radius: 20px;
 .item_kcal {
 }
 
-
 /* Slick */
 .slider_container {
   width: 100vw;
@@ -511,7 +488,6 @@ border-radius: 20px;
 
 .slick-list {
   /* overflow-y: visible; */
-
 }
 
 .slick-slide {
@@ -530,10 +506,12 @@ border-radius: 20px;
   right: 5vw;
 }
 
-.slick-prev:before:hover, .slick-next:before:hover {
+.slick-prev:before:hover,
+.slick-next:before:hover {
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   font-size: 10px;
   line-height: 0;
   position: absolute;
@@ -553,14 +531,14 @@ border-radius: 20px;
   z-index: 99;
 }
 
-
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   font-family: 'slick';
   font-size: 35px;
   line-height: 1;
-  opacity: .75;
-  color: #42A5F5;
-  color: #346C7F;
+  opacity: 0.75;
+  color: #42a5f5;
+  color: #346c7f;
   color: #438ba3;
 
   -webkit-font-smoothing: antialiased;
@@ -579,18 +557,16 @@ border-radius: 20px;
   text-align: center;
 }
 
-
 .slick-dots li.slick-active button:before {
-  opacity: .75;
+  opacity: 0.75;
   color: black;
   color: #438ba3;
-
 }
 
 /* Media */
 .media {
   width: 90%;
- min-height: 80vh;
+  min-height: 80vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -606,7 +582,6 @@ border-radius: 20px;
   margin: 10vh auto;
 }
 
-
 .media_container {
   display: flex;
   flex-wrap: wrap;
@@ -616,7 +591,6 @@ border-radius: 20px;
   width: 100%;
   margin: 0 auto 5vh;
   /* height: 20%; */
-
 }
 
 .media_item {
@@ -630,15 +604,13 @@ border-radius: 20px;
   margin: 0 auto;
   border-radius: 10px;
   padding: 6% 2%;
-  background-color: #D4D6C1;
+  background-color: #d4d6c1;
   background-color: #eae9e0;
-  transition: transform .5s ease-in-out;
-  
+  transition: transform 0.5s ease-in-out;
 }
 
 .media_item:hover {
   transform: scale(1.02);
-
 }
 
 .link_logo {
@@ -646,14 +618,12 @@ border-radius: 20px;
   width: 1rem;
   top: 2%;
   right: 2%;
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
-
 
 .nav_item path:hover {
   transform: scale(1.2);
   fill: #e1b480;
-
 }
 .link_logo:hover {
   color: #caa745;
@@ -661,13 +631,12 @@ border-radius: 20px;
 
 .link_logo path {
   fill: #4b4949;
-  transition: fill .5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
 }
 /* 🌸 */
 .link_logo:hover path {
   fill: #e1b480;
 }
-
 
 .item_image {
   width: 90%;
@@ -675,7 +644,6 @@ border-radius: 20px;
 }
 
 .biyo {
-  
 }
 .tazizan {
   width: 100%;
@@ -690,12 +658,9 @@ border-radius: 20px;
 .keizai {
 }
 
-
-
-
 .media_comment {
   height: 50%;
-  width:90%;
+  width: 90%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -709,20 +674,17 @@ border-radius: 20px;
 /* quote 点 */
 .initial-quote {
   font-size: 4rem;
-position: absolute;
-top: -10%;
-left: 0;
+  position: absolute;
+  top: -10%;
+  left: 0;
 }
 
 .end-quote {
   font-size: 4rem;
-position: absolute;
-bottom: 0;
-right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-
-
-
 
 /* Nutrition */
 #nutrition {
@@ -736,13 +698,11 @@ right: 0;
   flex-direction: column; */
 }
 
-
 .nutrition_container h2 {
   text-align: left;
   margin: 10vh 5vw 10vh auto;
   width: 90%;
 }
-
 
 .nutrition_items_container {
   /* border: #000  2px solid; */
@@ -763,8 +723,7 @@ right: 0;
   display: flex;
   position: absolute;
   font-size: 1.5rem;
-  min-width: 10vw; 
-
+  min-width: 10vw;
 }
 
 .title {
@@ -809,7 +768,9 @@ right: 0;
   display: flex;
 }
 
-.sugar, .fiber , .value{
+.sugar,
+.fiber,
+.value {
   font-size: 1.5rem;
 }
 
@@ -817,7 +778,6 @@ right: 0;
   left: 17%;
   top: 30%;
 }
-
 
 .value {
   transform: rotate(3deg);
@@ -829,7 +789,6 @@ right: 0;
   height: clamp(200px, 30vw, 300px);
 }
 
-
 .nutrition_comment {
   width: 70%;
   margin: 0 auto;
@@ -837,7 +796,6 @@ right: 0;
 
 .nutrition_comment p {
   /* font-size: 1rem; */
-
 }
 
 .nutrition_comment p:nth-child(1) {
@@ -850,13 +808,10 @@ right: 0;
 }
 
 .carousel_div_container {
-
 }
-
 
 /* Footer */
 #footer {
-
 }
 
 .footer {
@@ -876,16 +831,10 @@ right: 0;
   margin: 0 auto;
 }
 
-
-
-
-
-
 @media all and (max-width: 768px) {
   .dn-for-pc {
     display: block;
   }
-
 
   .section {
     margin: 15vh auto;
@@ -893,18 +842,17 @@ right: 0;
 
   h2 {
     font-size: 1.5rem;
-}
+  }
 
-h3 {
-  font-size: 1.2rem;
-}
+  h3 {
+    font-size: 1.2rem;
+  }
 
-p {
-  font-size: 1rem;
-}
+  p {
+    font-size: 1rem;
+  }
 
-
-/* hero */
+  /* hero */
   #hero {
     margin: 5vh auto;
     width: 80%;
@@ -922,7 +870,7 @@ p {
 
   .hero_image_container {
     width: 50%;
-}
+  }
   /* 
   .hero_image_bg {
     width: 100%;
@@ -997,8 +945,7 @@ p {
   }
   .item_image_container img:hover {
     /* width: 70%; */
-  } 
-
+  }
 
   /* Media */
   .media {
@@ -1010,7 +957,7 @@ p {
   .media_item {
     width: 40%;
     height: 15vh;
-    }
+  }
 
   .teitan {
     /* width: 40%; */
@@ -1025,7 +972,6 @@ p {
     right: -3%;
   }
 
-
   /* Nutrition */
   .nutrition_items_container {
     width: 100%;
@@ -1036,16 +982,16 @@ p {
     position: relative;
     /* flex-direction: column; */
   }
-  
+
   .title_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 1vh 5vw;
-    width: 90%;
+    width: 100%;
     padding-left: 10%;
     margin: 0 auto;
-}
+  }
 
   .nutrition_item {
     display: flex;
@@ -1055,74 +1001,80 @@ p {
     font-size: 1.5rem;
   }
 
-  
-.nutrition_item:nth-child(1) {
-  left: 0%;
-  top: 0%;
-}
+  /* エネルギー */
+  .nutrition_item:nth-child(1) {
+    left: 0%;
+    top: 0%;
+  }
 
-.nutrition_item:nth-child(2) {
-  left: 0%;
-  top: 0%;
-}
+  /* タンパク質 */
+  .nutrition_item:nth-child(2) {
+    left: 10%;
+    top: 0%;
+  }
 
-/* 脂質 */
-.nutrition_item:nth-child(3) {
-  left: 0%;
-  top: 0%;
-}
+  /* 脂質 */
+  .nutrition_item:nth-child(3) {
+    left: 0%;
+    top: 0%;
+  }
+  /* 食塩相当量 */
+  .nutrition_item:nth-child(4) {
+    left: 10%;
+    top: 0%;
+  }
 
-.nutrition_item:nth-child(4) {
-  left: 0%;
-  top: 0%;
-}
+  /* 炭水化物 */
+  .nutrition_item.carb {
+    left: 0%;
+    top: 0%;
+    display: flex;
+    flex-direction: flex;
+    flex-wrap: wrap;
+  }
 
+  .carb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.nutrition_item.carb {
-  left: 0%;
-  top: 0%;
-  display: flex;
-  flex-direction: flex;
-  flex-wrap: wrap;
-}
+  .sugar,
+  .fiber,
+  .value {
+    font-size: 1rem;
+  }
 
-.carb {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .title {
+    text-align: left;
+  }
 
+  .title,
+  .value {
+    transform: rotate(0);
+  }
 
-.sugar, .fiber, .value {
-  font-size: 1rem;
-}
+  .nutrition_image {
+    margin: 8vh auto;
+  }
 
-.title {
-  text-align: left;
-}
+  .nutrition_comment {
+    width: 80%;
+  }
 
-.title, .value {
-  transform: rotate(0);
-}
+  /* Footer */
+  .footer {
+    text-align: center;
+  }
+  .footer_container {
+    width: 70%;
+    margin: 0 auto;
+  }
 
-.nutrition_image {
-  margin: 8vh auto;
+  .footer_container p {
+    font-size: 0.8rem;
+  }
 }
-
-/* Footer */
-.footer {
-  text-align: center;
-}
-.footer_container {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.footer_container p {
-  font-size: .8rem;
-}
-}
-
 
 @media all and (max-width: 376px) {
   .nutrition_item:nth-child(3) {

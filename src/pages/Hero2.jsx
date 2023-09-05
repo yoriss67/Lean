@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import Spline from '@splinetool/react-spline';
-import Parallax from '../not-in-use/Parallax';
+import Parallax from './Parallax';
 
 const Star = ({ size, left, top, backgroundColor }) => (
   <div
