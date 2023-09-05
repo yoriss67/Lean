@@ -12,7 +12,7 @@
 // export default ParaChild;
 
 import React from 'react';
-import Parallax from './Parallax';
+import Parallax from '../pages/Parallax';
 
 const Star = ({ size, left, top }) => (
   <div

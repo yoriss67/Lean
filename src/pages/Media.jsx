@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import mediaData from '../data/mediaData.json';
 
 // import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
-import Parallax from '../not-in-use/Parallax';
+import Parallax from './/Parallax';
 
 export default function Media() {
   // https://codepen.io/lokesh/pen/PMyajg?editors=1100

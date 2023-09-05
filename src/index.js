@@ -24,7 +24,7 @@ export { default as Blog2 } from './not-in-use/BlogPosts/Blog2';
 
 // export { default as Page } from './pages/❌Page';
 export { default as Dev } from './not-in-use/Dev';
-export { default as Parallax } from './not-in-use/Parallax';
+export { default as Parallax } from './pages/Parallax';
 export { default as ParaChild } from './not-in-use/ParaChild';
 export { default as Vertical } from './not-in-use/Vertical';
 
